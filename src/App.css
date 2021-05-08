@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #212638;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__dropdown {
+  background: rgb(76, 32, 118);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.right-card {
+  background: rgb(45, 38, 78);
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__right {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.table_title {
+  font-weight: 450;
+  color: rgb(101, 138, 171);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.graph_title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 450;
+  color: rgb(101, 138, 171);
+  font-size: 1.4em;
+}
+
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+  background-color: rgb(198, 229, 236);
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+.logo {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 350;
+  color: rgb(78, 78, 150);
+  font-family: "Arial";
+  letter-spacing: 0.1em;
+  display: block;
 }
